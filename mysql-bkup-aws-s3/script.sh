@@ -1,6 +1,6 @@
 #/bin/bash
 
-# set input variables (optional, use if you don't plan to export first)
+# set input variables (optional, use if you don't plan to export before run)
 
 #DB_HOST=$1
 #DB_NAME=$2
