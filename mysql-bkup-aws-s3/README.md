@@ -8,7 +8,7 @@ File name will include db name and date  with formating of `"+%m%d%y_%N"`
 ```
 MYSQL_USER=root
 MYSQL_PORT=3306
-FILE_PATH=/tmp
+FILE_PATH_LOCAL=/tmp
 ```
 
 # Export vars:
