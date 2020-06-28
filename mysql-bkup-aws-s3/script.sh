@@ -23,13 +23,13 @@ echo ""
 echo "Your backup will be named: $BACKUP"
 echo "Target S3 location: s3://$AWS_BUCKET"
 echo ""
-mysqldump -u $MYSQL_USER -p$DB_PASSWORD -h $DB_HOST -P $MYSQL_PORT $DB_NAME > $FILE_PATH/$BACKUP && \
+mysqldump -u $MYSQL_USER -p$DB_PASSWORD -h $DB_HOST -P $MYSQL_PORT $DB_NAME > $FILE_PATH_LOCAL/$BACKUP && \
 export AWS_ACCESS_KEY_ID=$AWS_KEY && \
 export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_KEY && \
 echo ""
 echo "Uploading your backup $BACKUP"
 echo ""
-aws s3 cp $FILE_PATH/$BACKUP s3://$AWS_BUCKET && \
+aws s3 cp $FILE_PATH_LOCAL/$BACKUP s3://$AWS_BUCKET && \
 echo "" && \
 echo "Success!!!"
 echo ""
