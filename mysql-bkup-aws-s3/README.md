@@ -41,5 +41,13 @@ Success!!!
 ```
 
 # Alternate usage if not using export and vars are uncommented in script
+```
+#DB_HOST=$1
+#DB_NAME=$2
+#DB_PASSWORD=$3
+#AWS_KEY=$4
+#AWS_SECRET_KEY=$5
+#AWS_BUCKET=$6
+```
 
 `script.sh <DB_HOST_IP> <DB_NAME> <DB_PASWORD> <AWS_ACCESS_KEY_ID> <AWS_SECRET_ACCESS_KEY> <AWS_TARGET_BUCKET>`
