@@ -2,7 +2,11 @@
 
 This script will backup a specific mysql DB and push the backup to an AWS S3 bucket
 
-Note: expects mysql to be running on port `3306`
+File name will include db name and date  with formating of `"+%m%d%y_%N"`
+
+Temporary file will be stored at `/tmp`
+
+Note: Expects mysql to be running on port `3306`
 
 # Exported vars:
 ```
