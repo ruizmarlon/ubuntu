@@ -1,6 +1,6 @@
 #/bin/bash
 
-# set input variables as part of command call (optional, use if you don't plan to export first)
+# set input variables as part of script call (optional, use if you don't plan to export first)
 #DB_HOST=$1
 #DB_NAME=$2
 #DB_PASSWORD=$3
