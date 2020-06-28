@@ -16,3 +16,20 @@ export AWS_BUCKET=<AWS S3 target location no "s3://" required>
 # Usage:
 
 `script.sh`
+
+# Sample output
+```
+Backup beginning
+
+Your backup will be named: testdb-062820_688527918.sql
+Target S3 location: s3://jenkins-mysql-test-7a2nqpv9/dbbackup-testdb/
+
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+
+Uploading your backup testdb-062820_688527918.sql
+
+upload: ../../../tmp/testdb-062820_688527918.sql to s3://jenkins-mysql-test-7a2nqpv9/dbbackup-testdb/testdb-062820_688527918.sql
+
+Success!!!
+```
+
