@@ -1,13 +1,16 @@
 #/bin/bash
 
+# set input variables
 DB_HOST=$1
 DB_NAME=$2
 DB_PASSWORD=$3
 AWS_KEY=$4
 AWS_SECRET_KEY=$5
+AWS_BUCKET=$6
+
+# generate variables locally
 DB_DATE=$(date "+%m%d%y_%N")
 BACKUP=$DB_NAME-$DB_DATE.sql
-AWS_BUCKET=$6
 FILE_PATH=/tmp
 
 echo "Backup beginning"
