@@ -10,7 +10,7 @@ Assumes mysql user is `root`
 
 Note: Expects mysql to be running on port `3306`
 
-# Exported vars:
+# Export vars:
 ```
 export DB_HOST=<target host ip>
 export export DB_NAME=<mysql db name>
