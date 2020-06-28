@@ -21,7 +21,9 @@ echo ""
 mysqldump -u root -p$DB_PASSWORD -h $DB_HOST $DB_NAME > $FILE_PATH/$BACKUP && \
 export AWS_ACCESS_KEY_ID=$AWS_KEY && \
 export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_KEY && \
+echo ""
 echo "Uploading your backup $BACKUP"
+echo ""
 aws s3 cp $FILE_PATH/$BACKUP s3://$AWS_BUCKET && \
 echo "" && \
 echo "Success!!!"
