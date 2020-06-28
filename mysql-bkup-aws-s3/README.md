@@ -4,11 +4,12 @@ This script will backup a specific mysql DB and push the backup to an AWS S3 buc
 
 File name will include db name and date  with formating of `"+%m%d%y_%N"`
 
-Temporary file will be stored at `/tmp`
-
-Assumes mysql user is `root`
-
-Note: Expects mysql to be running on port `3306`
+# Default vars:
+```
+MYSQL_USER=root
+MYSQL_PORT=3306
+FILE_PATH=/tmp
+```
 
 # Export vars:
 ```
