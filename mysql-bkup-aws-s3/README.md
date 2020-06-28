@@ -6,6 +6,8 @@ File name will include db name and date  with formating of `"+%m%d%y_%N"`
 
 Temporary file will be stored at `/tmp`
 
+Assumes mysql user is `root`
+
 Note: Expects mysql to be running on port `3306`
 
 # Exported vars:
