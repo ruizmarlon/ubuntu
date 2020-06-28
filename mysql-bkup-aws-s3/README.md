@@ -40,6 +40,6 @@ upload: ../../../tmp/testdb-062820_688527918.sql to s3://jenkins-mysql-test-7a2n
 Success!!!
 ```
 
-# Alternate script run if export is not used and vars are uncommented in script
+# Alternate usage if not using export and vars are uncommented in script
 
 `script.sh <DB_HOST_IP> <DB_NAME> <DB_PASWORD> <AWS_ACCESS_KEY_ID> <AWS_SECRET_ACCESS_KEY> <AWS_TARGET_BUCKET>`
