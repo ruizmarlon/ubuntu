@@ -1,6 +1,6 @@
 # turn off unattended upgrades on ubuntu 18.04+
 
-When this happens because unattended is running preventing you from working with `apt-get`:
+When this happens it is because unattended is running preventing you from working with `apt-get`:
 
 ```
 Reading package lists... Done
