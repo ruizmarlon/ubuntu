@@ -1,0 +1,4 @@
+# to setup shell for secure crt etc...
+
+# prevent writing to history
+unset HISTFILE
